@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <style>
+    iframe {
+      width: 400px;
+      height: 100px;
+      opacity: 1;
+      z-index: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <p>One of the things restricted by the sandbox attribute is navigation. A sandboxed iframe may not change top.location.</p>
+
+  <p>So we can add the iframe with sandbox="allow-scripts allow-forms". That would relax the restrictions, permitting scripts and forms. But we omit allow-top-navigation so that changing top.location is forbidden.</p>
+
+  <iframe sandbox="allow-scripts allow-forms" src="solution1iframe.html">
+
+</body>
+</html>

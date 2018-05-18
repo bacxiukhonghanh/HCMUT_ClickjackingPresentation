@@ -1,0 +1,20 @@
+<html >
+<head><title></title></head>
+<body>
+
+<iframe id="bottom" src="http://www.cse.hcmut.edu.vn" width="1000" height="3000">
+</iframe>
+
+<iframe id="top" src="frame1.html" width="1000" height="3000">
+
+<!-- REPLACE THIS IFRAME OR PUT INTO IT WITH THE INVISIBLE LIKE BUTTON -->
+
+</iframe>
+
+<style type="text/css">
+  #top     {position:absolute; top:0px; left:0px; opacity:1.0; z-index:1}
+  #bottom  {position:absolute; top:0px; left:0px; opacity:1.0; z-index:0}
+</style>
+
+</body>
+</html>

